@@ -1,0 +1,63 @@
+    Cucumber
+        Cucumber is a Framework
+        We will learn the tool, and the framework
+
+    Framework provides:
+        - Organized Structure
+        - Hierarchy
+        - Separate place for separate codes
+        - Single execution point
+
+    We use maven as a build management tool
+
+    gorup id - company name
+    artifact id - project name
+
+    main folder - for development code
+    test folder - for testing code
+        -- java - for coding part
+        -- resources for non-coding part
+
+    pom.xml -- to add dependency
+    it is a configuratyion file which is considered as a backbone of the maven project
+
+    Cucumber -- It supports behavioral driven development appraoch wherein we write our test cases specification in
+                gherkin langauge (plain english)
+
+    Keywords: features, background, scenario
+
+                Given - precondition - Given user is navigated to the HRMS application
+                When - Actions -- When the user enters username and password
+                And -- this tag can come with every other keyword -- And user click on login button
+                Then -- expected output - result - Then user should be able to see dashboard page
+
+
+    Recap:
+        Maven - build management tool
+
+        test - here we write code for testing
+            -- java - coding stuff
+            -- resources - non-coding stuff
+
+                        Given - precondition - Given user is navigated to the HRMS application
+                        When - Actions -- When the user enters username and password
+                        And -- this tag can come with every other keyword -- And user click on login button
+                        Then -- expected output - result - Then user should be able to see dashboard page
+                        Feature -- .feature -- to write scenario we use feature file
+
+
+    Acceptance Criteria:
+        1 search by id
+        2 search by name
+1. Given user opens browser and navigates to HRMS
+And user is logged in as admin
+And user is on employee list page
+When user enters valid employee id
+And user clicks on search button
+Then user sees employee in the employee table
+
+
+selenium -
+java -
+cucumber -
+excel -
