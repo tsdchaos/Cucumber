@@ -47,7 +47,7 @@
 
 
     Acceptance Criteria:
-        1 search by id
+        1 search by id - 23638000
         2 search by name
 1. Given user opens browser and navigates to HRMS
 And user is logged in as admin
@@ -56,8 +56,36 @@ When user enters valid employee id
 And user clicks on search button
 Then user sees employee in the employee table
 
+2.
+Given user opens browser and navigated to HRMS
+And user is logged in as an admin
+And user is on employee list page
+When user enters firstname and lastname
+And user clicks on search button
+The user sees employee in the employee table
 
-selenium -
-java -
-cucumber -
-excel -
+
+
+Class 3
+Recap
+Reasons to use Cucumber:
+    To increase transparency/ to reduce communication gap
+    It supports BDD (Gherkin) language - easy to understand for non technical people also
+    Focuses on the end user
+
+Feature file - to write our test scenarios
+
+Keywords:
+    Given - write a precondition
+    When - to perform actions
+    And - supporting tag that can be associated with any other tag
+    Then - Result
+
+Step definition - to implement the code for the steps written in feature file, we use step definitions
+
+Runner class -
+
+
+
+
+
