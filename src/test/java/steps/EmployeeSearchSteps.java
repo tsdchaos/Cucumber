@@ -39,7 +39,6 @@ public class EmployeeSearchSteps extends CommonMethods {
     }
     @When("user enters valid ess username and password")
     public void user_enters_valid_ess_username_and_password() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        System.out.println("Hello");
     }
 }

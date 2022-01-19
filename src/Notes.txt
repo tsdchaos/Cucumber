@@ -86,6 +86,46 @@ Step definition - to implement the code for the steps written in feature file, w
 Runner class -
 
 
+backgrounbd - it is applicable only for one feature file, here we add common steps among all the scenarios
+
+Class 4:
+
+Recap
+    Runner class - to configure the execution flow of our test cases
+
+    @Runwith  from j-unit
+    @cucumberoptions - to provide configurations
+        features - path of my feature files
+        glue - path of the step definitions for feature files
+        dryRun - if it is set to true, it stops actual execution and provides the missing steps snippet
+        monochrome - it removes unreadable character and cleans the console
+        tags - for grouping
+        plugins - for report generation and other purpose
+
+        background - to put common steps among all the scenarios from single feature file, we use background
+        Hooks - We use hooks to provide preconditions and post conditions
+            We should provide hooks under the package where my steps are available
+
+        Hooks vs. Background -
+            Background - it is applicable to one feature file
+            Hooks - it is applicable to all the feature files
+
+
+Class 5
+    Recap:
+        Hooks - precondition and post-condition for all feature files
+        before and after = pre condition and post-condition tags
+
+        Passing the data
+            Passing the data directly from feature file - scenario
+            Passing the data from @examples table from scenario outline to achieve ddt
+
+        from data table -
+            data table vs. example -
+            data table is applicable to just a single step
+            examples table is applicable to complete scenario
+
+
 
 
 
